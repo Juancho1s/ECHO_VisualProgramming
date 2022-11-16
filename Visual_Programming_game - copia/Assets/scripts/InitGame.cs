@@ -19,7 +19,7 @@ public class InitGame : MonoBehaviour
             a = 1;
         }
         if (a==1){
-            audio.volume = audio.volume - 0.0005f;
+            audio.volume = audio.volume - 0.0008f;
         }
     }
 
