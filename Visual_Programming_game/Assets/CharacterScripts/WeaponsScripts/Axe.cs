@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Axe : MonoBehaviour
 {
-    public float damage = 20f;
+    public float damage = 40f;
     void Start()
     {
-        Destroy(gameObject, 3);
+        
     }
     private void OnTriggerEnter(Collider other)
     {
