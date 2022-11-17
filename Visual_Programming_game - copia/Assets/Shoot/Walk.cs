@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Walk : MonoBehaviour
 {
-   Rigidbody rb;
+   public Rigidbody rb;
    bool floorDetected = false;
    bool isJump = false;
    public float jumpForce = 5.0f;
