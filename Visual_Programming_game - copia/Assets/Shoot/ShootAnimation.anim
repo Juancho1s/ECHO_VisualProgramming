@@ -27,7 +27,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 0.4
+        time: 0.06666667
         value: {x: -44.496, y: 3.038, z: -1.103}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -38,8 +38,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.65
         value: {x: -2.127, y: 2.295, z: -0.787}
-        inSlope: {x: 37.520008, y: -0.51200104, z: 0}
-        outSlope: {x: 37.520008, y: -0.51200104, z: 0}
+        inSlope: {x: 22.512003, y: -0.30720064, z: 0}
+        outSlope: {x: 22.512003, y: -0.30720064, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -114,7 +114,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 0.15
+        time: 0.05
         value: {x: 0.666, y: -0.806, z: 0.764}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -208,7 +208,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.4
+        time: 0.06666667
         value: -44.496
         inSlope: 0
         outSlope: 0
@@ -219,8 +219,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.65
         value: -2.127
-        inSlope: 37.520008
-        outSlope: 37.520008
+        inSlope: 22.512003
+        outSlope: 22.512003
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -263,7 +263,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.4
+        time: 0.06666667
         value: 3.038
         inSlope: 0
         outSlope: 0
@@ -274,8 +274,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.65
         value: 2.295
-        inSlope: -0.51200104
-        outSlope: -0.51200104
+        inSlope: -0.30720064
+        outSlope: -0.30720064
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -318,7 +318,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.4
+        time: 0.06666667
         value: -1.103
         inSlope: 0
         outSlope: 0
@@ -484,7 +484,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.15
+        time: 0.05
         value: 0.666
         inSlope: 0
         outSlope: 0
@@ -521,7 +521,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.15
+        time: 0.05
         value: -0.806
         inSlope: 0
         outSlope: 0
@@ -558,7 +558,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.15
+        time: 0.05
         value: 0.764
         inSlope: 0
         outSlope: 0
@@ -618,7 +618,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: 
+    path: pyhton_prefab/Colt_Python_rigged/Main/Bolt
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -628,17 +628,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: 
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: 
+    path: pyhton_prefab/Colt_Python_rigged/Main/Bolt
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -657,8 +647,18 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: 
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: pyhton_prefab/Colt_Python_rigged/Main/Bolt
+    path: 
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -668,7 +668,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: pyhton_prefab/Colt_Python_rigged/Main/Bolt
+    path: 
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
