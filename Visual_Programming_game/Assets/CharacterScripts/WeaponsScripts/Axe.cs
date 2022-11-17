@@ -11,7 +11,6 @@ public class Axe : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(transform.GetComponent<Rigidbody>());
         if (other.tag == "SimpleZombie")
         {
             transform.parent = other.transform;
