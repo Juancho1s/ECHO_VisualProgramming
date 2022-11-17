@@ -27,9 +27,17 @@ public class ReloadPython : MonoBehaviour
             {
                 if(shoot.charger > 0)
                 {
-                    tester = 6 - shoot.charger;
-                    shoot.charger = shoot.charger + tester;
-                    shoot.ammo = shoot.ammo - tester;
+                    tester = - shoot.charger + 6;
+                    if(shoot.ammo>tester)
+                    {
+                        shoot.charger = 6;
+                        shoot.ammo = shoot.ammo-tester;
+                    }
+                    else
+                    {
+                        shoot.charger = shoot.charger + shoot.ammo;
+                        shoot.ammo = 0;
+                    }
                 }
                 else
                 {

@@ -8,6 +8,7 @@ public class Shoot : MonoBehaviour
     public GameObject bullet;
     public Transform cannon;
 
+
     public float bulletForce = 1500f;
     public float shootRate = 1.2f;
     public int ammo = 2;
@@ -16,6 +17,7 @@ public class Shoot : MonoBehaviour
     public new AudioSource revolverShootSound;
     public new AudioSource noAmmo;
     public Animation pythonAnimation;
+    public Animation pythonAnimation2;
     public ReloadPython pythonReloadScript;
     IEnumerator wait (GameObject bulletNew)
     {
@@ -26,6 +28,7 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(Input.GetButtonDown("Fire1"))
         {
             if(Time.time>shootRateTime)
@@ -33,9 +36,12 @@ public class Shoot : MonoBehaviour
                 if(charger > 0)
                 {
                     revolverShootSound.Play();
+                    
                     GameObject newBullet;
                     newBullet = Instantiate(bullet,cannon.position,cannon.rotation);
                     newBullet.GetComponent<Rigidbody>().AddForce(cannon.forward * bulletForce);
+
+                    pythonAnimation2.Play();
 
                     shootRateTime = Time.time + shootRate;
 
