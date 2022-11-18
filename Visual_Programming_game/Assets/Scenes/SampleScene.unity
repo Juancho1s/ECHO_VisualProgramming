@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -199,6 +199,7 @@ MonoBehaviour:
   speed: 5
   gravity: -9.81
   JumpHeight: 1
+  life: 200
 --- !u!195 &177598189
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -953,6 +954,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1311619137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7547691395978512338, guid: cf80c9a89deda4655ad000942607ffe2, type: 3}
+  m_PrefabInstance: {fileID: 2003051184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1311619139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311619137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.10796963, y: 0.4443949, z: 0.07509141}
+  m_Center: {x: 1.6703461e-10, y: -0.04059885, z: -0.0000000034096792}
 --- !u!1 &1381403849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,6 +1105,40 @@ Transform:
   m_Father: {fileID: 2052738258}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1720781643 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cf80c9a89deda4655ad000942607ffe2, type: 3}
+  m_PrefabInstance: {fileID: 2003051184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1720781644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720781643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0710d82039cae2b4eb5347870eb7c13d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 1311619139}
+--- !u!114 &1720781645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720781643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee3abe0d63cf34983ba2fcc92248dc76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 100
+  damage: 15
+  animator: {fileID: 0}
+  target: {fileID: 177598185}
 --- !u!1 &1733077495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,8 +1154,6 @@ GameObject:
   - component: {fileID: 1733077498}
   - component: {fileID: 1733077497}
   - component: {fileID: 1733077496}
-  - component: {fileID: 1733077503}
-  - component: {fileID: 1733077504}
   m_Layer: 6
   m_Name: boxZombie
   m_TagString: SimpleZombie
@@ -1244,40 +1295,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1733077503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733077495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee3abe0d63cf34983ba2fcc92248dc76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 100
-  animator: {fileID: 0}
---- !u!95 &1733077504
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733077495}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1936097834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ch10_nonPBR
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: cf80c9a89deda4655ad000942607ffe2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2a9d22d6bc8241041b49683e7441c16d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf80c9a89deda4655ad000942607ffe2, type: 3}
 --- !u!1 &2052738257
